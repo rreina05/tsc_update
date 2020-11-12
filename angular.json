@@ -56,7 +56,6 @@
                             "optimization": true,
                             "outputHashing": "all",
                             "sourceMap": false,
-                            "extractCss": true,
                             "namedChunks": false,
                             "aot": true,
                             "extractLicenses": true,
@@ -81,8 +80,7 @@
                                     "maximumWarning": "6kb"
                                 }
                             ],
-                            "sourceMap": true,
-                            "extractCss": true
+                            "sourceMap": true
                         },
                         "hmr": {
                             "budgets": [
