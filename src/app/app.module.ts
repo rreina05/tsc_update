@@ -7,7 +7,6 @@ import { MatMomentDateModule } from '@angular/material-moment-adapter';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { TranslateModule } from '@ngx-translate/core';
-import 'hammerjs';
 
 import { FuseModule } from '@fuse/fuse.module';
 import { FuseSharedModule } from '@fuse/shared.module';
@@ -34,7 +33,7 @@ const appRoutes: Routes = [
         BrowserModule,
         BrowserAnimationsModule,
         HttpClientModule,
-        RouterModule.forRoot(appRoutes),
+        RouterModule.forRoot(appRoutes, { relativeLinkResolution: 'legacy' }),
 
         TranslateModule.forRoot(),
 
